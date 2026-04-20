@@ -1,12 +1,12 @@
-# Lider Media
+# Repo Media
 
-Repositorio de archivos multimedia del sistema **Lider Online**. Almacena todos los archivos binarios subidos o generados por lider-admin y lider-app.
+Repositorio de archivos multimedia del sistema **Repo Online**. Almacena todos los archivos binarios subidos o generados por repo-admin y repo-app.
 
 ## Estructura
 
 ```
-lider-media/
-└── productos/      # Imágenes de productos subidas desde lider-admin
+repo-media/
+└── productos/      # Imágenes de productos subidas desde repo-admin
 ```
 
 ---
@@ -18,7 +18,7 @@ lider-media/
 Las imágenes se suben a través del endpoint:
 
 ```
-POST /lider-admin/api/upload.php
+POST /repo-admin/api/upload.php
 ```
 
 - Campo del formulario: `imagen`
@@ -32,16 +32,16 @@ La respuesta devuelve la URL relativa lista para usar:
 {
   "ok": true,
   "archivo": "1714000000_a3f9c1b2.jpg",
-  "url": "../lider-media/productos/1714000000_a3f9c1b2.jpg"
+  "url": "../repo-media/productos/1714000000_a3f9c1b2.jpg"
 }
 ```
 
 ### Acceso desde la app
 
-Las imágenes se referencian con ruta relativa desde lider-app y lider-admin:
+Las imágenes se referencian con ruta relativa desde repo-app y repo-admin:
 
 ```
-../lider-media/productos/nombre-del-archivo.jpg
+../repo-media/productos/nombre-del-archivo.jpg
 ```
 
 ---

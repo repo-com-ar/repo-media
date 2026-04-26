@@ -6,7 +6,8 @@ Repositorio de archivos multimedia del sistema **Repo Online**. Almacena todos l
 
 ```
 repo-media/
-└── productos/      # Imágenes de productos subidas desde repo-admin
+├── productos/      # Imágenes de productos subidas desde repo-admin
+└── supervisor.php  # Health check (responde "OK")
 ```
 
 ---
